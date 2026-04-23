@@ -1,0 +1,6 @@
+requests
+folium
+textblob
+wordcloud
+matplotlib
+Pillow

@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_622ffabe1df7d91f1e5376eda002efb1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_622ffabe1df7d91f1e5376eda002efb1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_622ffabe1df7d91f1e5376eda002efb1 = L.map(
+                "map_622ffabe1df7d91f1e5376eda002efb1",
+                {
+                    center: [19.054999, 72.8692035],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9035174cbb9eb9360b8b0023310bf945 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9035174cbb9eb9360b8b0023310bf945.addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var marker_eb5da36a92838b07e955f2ff60139cee = L.marker(
+                [19.058920272307827, 72.864721945036],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_6d89a1406e65f08541b5cc817febecdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e60ee5589eaa271e380714014670b08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a025bcccf1292505a183668adcc93ab0 = $(`<div id="html_a025bcccf1292505a183668adcc93ab0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Amazonia</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">53/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Amazonia, Avenue 3, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Suburban ...</i>         </div>         </div>`)[0];
+                popup_9e60ee5589eaa271e380714014670b08.setContent(html_a025bcccf1292505a183668adcc93ab0);
+            
+        
+
+        marker_eb5da36a92838b07e955f2ff60139cee.bindPopup(popup_9e60ee5589eaa271e380714014670b08)
+        ;
+
+        
+    
+    
+                marker_eb5da36a92838b07e955f2ff60139cee.setIcon(icon_6d89a1406e65f08541b5cc817febecdd);
+            
+    
+            var marker_b946858ae7aaa496aaed7affd8f7e7f2 = L.marker(
+                [19.05947822957607, 72.8646181241272],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_ee6be552d3392c201e9152bb5c36b015 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bafdb1447a669a7aca1e2b22555c1b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07f2b3f97f77ef1995ca648a2fb47e6d = $(`<div id="html_07f2b3f97f77ef1995ca648a2fb47e6d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">O Pedro</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">53/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">O Pedro, Avenue 3, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Suburban D...</i>         </div>         </div>`)[0];
+                popup_2bafdb1447a669a7aca1e2b22555c1b7.setContent(html_07f2b3f97f77ef1995ca648a2fb47e6d);
+            
+        
+
+        marker_b946858ae7aaa496aaed7affd8f7e7f2.bindPopup(popup_2bafdb1447a669a7aca1e2b22555c1b7)
+        ;
+
+        
+    
+    
+                marker_b946858ae7aaa496aaed7affd8f7e7f2.setIcon(icon_ee6be552d3392c201e9152bb5c36b015);
+            
+    
+            var marker_66a26bd1032a2e855cfb537af3f7cf0a = L.marker(
+                [19.0507352211839, 72.86479319695854],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_bbd73e02e8bd9295dd43a8494628673f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f38f9fae47f2014406e2d289efe0f6c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0e650065a41a066d00c0dba8b1bed06 = $(`<div id="html_b0e650065a41a066d00c0dba8b1bed06" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Apna Hotel</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">55/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Apna Hotel, Lal Bahadur Shastri Marg, Kala Qila, G/N Ward, Mumbai Zone 2, Mumbai City District, Maha...</i>         </div>         </div>`)[0];
+                popup_9f38f9fae47f2014406e2d289efe0f6c.setContent(html_b0e650065a41a066d00c0dba8b1bed06);
+            
+        
+
+        marker_66a26bd1032a2e855cfb537af3f7cf0a.bindPopup(popup_9f38f9fae47f2014406e2d289efe0f6c)
+        ;
+
+        
+    
+    
+                marker_66a26bd1032a2e855cfb537af3f7cf0a.setIcon(icon_bbd73e02e8bd9295dd43a8494628673f);
+            
+    
+            var marker_032f02c09483cfe5f391be1860bb2c80 = L.marker(
+                [19.061291946657846, 72.86806751975219],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_0d96bf7c2a120cd593001ae37d97d7bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acc152b1f2cd3e23b1ff492360f4a416 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17782fd9c699047f7461dc5ff29c3bfe = $(`<div id="html_17782fd9c699047f7461dc5ff29c3bfe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Origami Japanese & Korean Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">41/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Origami Japanese & Korean Restaurant, G-Block, Bandra Kurla Complex, Avenue 3, G Block, Bandra Kurla...</i>         </div>         </div>`)[0];
+                popup_acc152b1f2cd3e23b1ff492360f4a416.setContent(html_17782fd9c699047f7461dc5ff29c3bfe);
+            
+        
+
+        marker_032f02c09483cfe5f391be1860bb2c80.bindPopup(popup_acc152b1f2cd3e23b1ff492360f4a416)
+        ;
+
+        
+    
+    
+                marker_032f02c09483cfe5f391be1860bb2c80.setIcon(icon_0d96bf7c2a120cd593001ae37d97d7bd);
+            
+    
+            var marker_d4144d6254747d74366ba7f19da252e3 = L.marker(
+                [19.05977688414607, 72.86477693580031],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_e524118e062ace06c8de9bbb496a3dee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3cf0c9eacc1ab4ee7d101780298b07b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fc7b01150081366b53c6323c1dd8619d = $(`<div id="html_fc7b01150081366b53c6323c1dd8619d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Butterfly High</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">56/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Butterfly High, Avenue 3, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Sub...</i>         </div>         </div>`)[0];
+                popup_c3cf0c9eacc1ab4ee7d101780298b07b.setContent(html_fc7b01150081366b53c6323c1dd8619d);
+            
+        
+
+        marker_d4144d6254747d74366ba7f19da252e3.bindPopup(popup_c3cf0c9eacc1ab4ee7d101780298b07b)
+        ;
+
+        
+    
+    
+                marker_d4144d6254747d74366ba7f19da252e3.setIcon(icon_e524118e062ace06c8de9bbb496a3dee);
+            
+    
+            var marker_b9bc191fbf7ca2ecf86bee6ccc4bec02 = L.marker(
+                [19.060318198300145, 72.87251735388172],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_5ecc45ff58f5da7538c3609c1b99ab03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5793801332a68037e92dbb94b9503e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_604cc12ddb1f871d4e1523705642a676 = $(`<div id="html_604cc12ddb1f871d4e1523705642a676" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Metro</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">66/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Metro, A H Wadia Marg, Ram Manohar Lohia Nagar, Kurla West, L Ward, Mumbai Zone 5, Mumbai, Mumbai Su...</i>         </div>         </div>`)[0];
+                popup_a5793801332a68037e92dbb94b9503e3.setContent(html_604cc12ddb1f871d4e1523705642a676);
+            
+        
+
+        marker_b9bc191fbf7ca2ecf86bee6ccc4bec02.bindPopup(popup_a5793801332a68037e92dbb94b9503e3)
+        ;
+
+        
+    
+    
+                marker_b9bc191fbf7ca2ecf86bee6ccc4bec02.setIcon(icon_5ecc45ff58f5da7538c3609c1b99ab03);
+            
+    
+            var marker_1fb7c4f9e0d8f63fbd4edd94b4bbeef6 = L.marker(
+                [19.060184369827166, 72.86562820629757],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_dbdd52310961dfb468703796e0dba71e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad76200c8e9acae6a21e9905dc6d8fe3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_628d3c9c2915be63cb255175fab076ed = $(`<div id="html_628d3c9c2915be63cb255175fab076ed" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Kyma</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">50/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Kyma, BKC - Eastern Express Highway Road, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mu...</i>         </div>         </div>`)[0];
+                popup_ad76200c8e9acae6a21e9905dc6d8fe3.setContent(html_628d3c9c2915be63cb255175fab076ed);
+            
+        
+
+        marker_1fb7c4f9e0d8f63fbd4edd94b4bbeef6.bindPopup(popup_ad76200c8e9acae6a21e9905dc6d8fe3)
+        ;
+
+        
+    
+    
+                marker_1fb7c4f9e0d8f63fbd4edd94b4bbeef6.setIcon(icon_dbdd52310961dfb468703796e0dba71e);
+            
+    
+            var marker_cf959c7e8ba1a7016ba1060fd0087455 = L.marker(
+                [19.060766289707285, 72.86528044827512],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_64475d9542ea04158bfaef3e1e38de70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a843c3124c512f03893d1d310823e521 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d426fe702f760687ba99e421e825f483 = $(`<div id="html_d426fe702f760687ba99e421e825f483" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Sequel</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">63/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Sequel, BKC - Eastern Express Highway Road, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, ...</i>         </div>         </div>`)[0];
+                popup_a843c3124c512f03893d1d310823e521.setContent(html_d426fe702f760687ba99e421e825f483);
+            
+        
+
+        marker_cf959c7e8ba1a7016ba1060fd0087455.bindPopup(popup_a843c3124c512f03893d1d310823e521)
+        ;
+
+        
+    
+    
+                marker_cf959c7e8ba1a7016ba1060fd0087455.setIcon(icon_64475d9542ea04158bfaef3e1e38de70);
+            
+    
+            var marker_a007bc0ac7cd3a3eba54a532390c7dcb = L.marker(
+                [19.04972777751502, 72.86509930444386],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_7a810f8860732057beaa90a7c93ef1ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9a181cbdc6441f522d68e602eb7894e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d70298a4feeef4b52ea01ab13d7a5590 = $(`<div id="html_d70298a4feeef4b52ea01ab13d7a5590" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Lal Bahadur Shastri Marg</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">66/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Lal Bahadur Shastri Marg, Kala Qila, G/N Ward, Mumbai Zone 2, Mumbai City District, Maharashtra, 400...</i>         </div>         </div>`)[0];
+                popup_b9a181cbdc6441f522d68e602eb7894e.setContent(html_d70298a4feeef4b52ea01ab13d7a5590);
+            
+        
+
+        marker_a007bc0ac7cd3a3eba54a532390c7dcb.bindPopup(popup_b9a181cbdc6441f522d68e602eb7894e)
+        ;
+
+        
+    
+    
+                marker_a007bc0ac7cd3a3eba54a532390c7dcb.setIcon(icon_7a810f8860732057beaa90a7c93ef1ce);
+            
+    
+            var marker_e5a869eee0490177e49c5855de10b489 = L.marker(
+                [19.060669388541363, 72.86324508064519],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_5ee9edb1b182e18d04cecdbd03ab22da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc2f90fd6a9eaec7b98e66eb2f9455eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46702a1f6b1c9099fe0e1cb135731e45 = $(`<div id="html_46702a1f6b1c9099fe0e1cb135731e45" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">CinCin</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">59/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">CinCin, Bandra Kurla Complex Road, Sant Dnyaneshwar Nagar, Bandra Kurla Complex, H/E Ward, Mumbai Zo...</i>         </div>         </div>`)[0];
+                popup_cc2f90fd6a9eaec7b98e66eb2f9455eb.setContent(html_46702a1f6b1c9099fe0e1cb135731e45);
+            
+        
+
+        marker_e5a869eee0490177e49c5855de10b489.bindPopup(popup_cc2f90fd6a9eaec7b98e66eb2f9455eb)
+        ;
+
+        
+    
+    
+                marker_e5a869eee0490177e49c5855de10b489.setIcon(icon_5ee9edb1b182e18d04cecdbd03ab22da);
+            
+    
+            var marker_dbdd0997234f12ee430ea8cf6c231ba0 = L.marker(
+                [19.06079761720564, 72.86317252864113],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_48c09c34f2c13a816d5e46f48251fb77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47cd036e9b534ab979f88e51bdad49b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7afa22f9c9d470a877d9c95804e4ed5 = $(`<div id="html_e7afa22f9c9d470a877d9c95804e4ed5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Yauatcha</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">53/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Yauatcha, Bandra Kurla Complex Road, Sant Dnyaneshwar Nagar, Bandra Kurla Complex, H/E Ward, Mumbai ...</i>         </div>         </div>`)[0];
+                popup_47cd036e9b534ab979f88e51bdad49b3.setContent(html_e7afa22f9c9d470a877d9c95804e4ed5);
+            
+        
+
+        marker_dbdd0997234f12ee430ea8cf6c231ba0.bindPopup(popup_47cd036e9b534ab979f88e51bdad49b3)
+        ;
+
+        
+    
+    
+                marker_dbdd0997234f12ee430ea8cf6c231ba0.setIcon(icon_48c09c34f2c13a816d5e46f48251fb77);
+            
+    
+            var marker_5424ad231d2c0ee97f1b3f8d9454079e = L.marker(
+                [19.060732698303724, 72.86271535242402],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_8f2ff2993df9b98fbe97207905188b1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d661f513649609069fd5cca2f696562 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01b84931e5deebdec979874f1062ceff = $(`<div id="html_01b84931e5deebdec979874f1062ceff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Nara Thai</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">43/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Nara Thai, Bandra Kurla Complex Road, Sant Dnyaneshwar Nagar, Bandra Kurla Complex, H/E Ward, Mumbai...</i>         </div>         </div>`)[0];
+                popup_9d661f513649609069fd5cca2f696562.setContent(html_01b84931e5deebdec979874f1062ceff);
+            
+        
+
+        marker_5424ad231d2c0ee97f1b3f8d9454079e.bindPopup(popup_9d661f513649609069fd5cca2f696562)
+        ;
+
+        
+    
+    
+                marker_5424ad231d2c0ee97f1b3f8d9454079e.setIcon(icon_8f2ff2993df9b98fbe97207905188b1b);
+            
+    
+            var marker_66406f7d4a2dd39e990eeebba3fbe7d0 = L.marker(
+                [19.04842035766384, 72.86379217808994],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_88918f81a238e2044495f88ca76d2edc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e64e64c7654ab45331171c86a136d4f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb5fc3a7960695d1546d2a4986ab2f73 = $(`<div id="html_cb5fc3a7960695d1546d2a4986ab2f73" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Sangam Hotel</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">61/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Sangam Hotel, Lal Bahadur Shastri Marg, Kala Qila, G/N Ward, Mumbai Zone 2, Mumbai City District, Ma...</i>         </div>         </div>`)[0];
+                popup_e64e64c7654ab45331171c86a136d4f5.setContent(html_cb5fc3a7960695d1546d2a4986ab2f73);
+            
+        
+
+        marker_66406f7d4a2dd39e990eeebba3fbe7d0.bindPopup(popup_e64e64c7654ab45331171c86a136d4f5)
+        ;
+
+        
+    
+    
+                marker_66406f7d4a2dd39e990eeebba3fbe7d0.setIcon(icon_88918f81a238e2044495f88ca76d2edc);
+            
+    
+            var marker_f5beaf0c58c6cac46fc113dc2a91320f = L.marker(
+                [19.064851431180543, 72.8660544691584],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_40bcfa83152beced0f2b751e2817382a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69e2eaf2e97964cf4323a61e0aeaa56e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_496fd908bd6020bc2d28e1d33e72c1ad = $(`<div id="html_496fd908bd6020bc2d28e1d33e72c1ad" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Indian Accent</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">63/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Indian Accent, Avenue 3, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Subu...</i>         </div>         </div>`)[0];
+                popup_69e2eaf2e97964cf4323a61e0aeaa56e.setContent(html_496fd908bd6020bc2d28e1d33e72c1ad);
+            
+        
+
+        marker_f5beaf0c58c6cac46fc113dc2a91320f.bindPopup(popup_69e2eaf2e97964cf4323a61e0aeaa56e)
+        ;
+
+        
+    
+    
+                marker_f5beaf0c58c6cac46fc113dc2a91320f.setIcon(icon_40bcfa83152beced0f2b751e2817382a);
+            
+    
+            var marker_361a0b084bf11b108421dc3c62f825b3 = L.marker(
+                [19.045334248737156, 72.86467783694624],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_4a693b6a818b77f11d8ea52a44915cdb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6335ab7b49d59218f96fe1bed7ec0bc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31cadc8bc55980bb60edfd21d57adce9 = $(`<div id="html_31cadc8bc55980bb60edfd21d57adce9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Hotel shraddha</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">56/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Hotel shraddha, Road No 1, Sion East, F/N Ward, Mumbai Zone 2, Mumbai City District, Maharashtra, 40...</i>         </div>         </div>`)[0];
+                popup_6335ab7b49d59218f96fe1bed7ec0bc4.setContent(html_31cadc8bc55980bb60edfd21d57adce9);
+            
+        
+
+        marker_361a0b084bf11b108421dc3c62f825b3.bindPopup(popup_6335ab7b49d59218f96fe1bed7ec0bc4)
+        ;
+
+        
+    
+    
+                marker_361a0b084bf11b108421dc3c62f825b3.setIcon(icon_4a693b6a818b77f11d8ea52a44915cdb);
+            
+    
+            var marker_65dfd87bbc76d24d216dcebb40a7db23 = L.marker(
+                [19.061986618805637, 72.87706490322769],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_690e46232bac7ce70fced0eac5bf88ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d19b8163c59ea70377f433898726653c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ee0fbaa2530f21bf28ae4de00cc4376 = $(`<div id="html_0ee0fbaa2530f21bf28ae4de00cc4376" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">GULAM MOHHAMED SHUBRATI BUILDING;suleman usman mithiwala</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">37/100</span><br>             <b>Sentiment:</b> Negative<br>             <br>             <i style="font-size: 11px;">GULAM MOHHAMED SHUBRATI BUILDING;suleman usman mithiwala, A H Wadia Marg, Ram Manohar Lohia Nagar, K...</i>         </div>         </div>`)[0];
+                popup_d19b8163c59ea70377f433898726653c.setContent(html_0ee0fbaa2530f21bf28ae4de00cc4376);
+            
+        
+
+        marker_65dfd87bbc76d24d216dcebb40a7db23.bindPopup(popup_d19b8163c59ea70377f433898726653c)
+        ;
+
+        
+    
+    
+                marker_65dfd87bbc76d24d216dcebb40a7db23.setIcon(icon_690e46232bac7ce70fced0eac5bf88ec);
+            
+    
+            var marker_198d4f3ef077aef23ebf78adedd44351 = L.marker(
+                [19.045563759661363, 72.86476675064674],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_cf9adfdd17072412fbfa106eacd51c27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d2873df8cf07c02923bfde7a2db095d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a327acb82c88566b3dd540ba22475977 = $(`<div id="html_a327acb82c88566b3dd540ba22475977" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Aparna</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">63/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Aparna, Road No 1, Sion East, F/N Ward, Mumbai Zone 2, Mumbai City District, Maharashtra, 400022, In...</i>         </div>         </div>`)[0];
+                popup_4d2873df8cf07c02923bfde7a2db095d.setContent(html_a327acb82c88566b3dd540ba22475977);
+            
+        
+
+        marker_198d4f3ef077aef23ebf78adedd44351.bindPopup(popup_4d2873df8cf07c02923bfde7a2db095d)
+        ;
+
+        
+    
+    
+                marker_198d4f3ef077aef23ebf78adedd44351.setIcon(icon_cf9adfdd17072412fbfa106eacd51c27);
+            
+    
+            var marker_bb916c88d7ab449c84d25469230b0eef = L.marker(
+                [19.06380572557859, 72.86204477872232],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_062fd364bec165ae3d8a51ee5bdca200 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10fcae3d39d8027703919801f8942fc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87b032e4aa646692041162eb439b9a00 = $(`<div id="html_87b032e4aa646692041162eb439b9a00" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Soda Bottle Opener Wala</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">52/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Soda Bottle Opener Wala, Street 5, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, M...</i>         </div>         </div>`)[0];
+                popup_10fcae3d39d8027703919801f8942fc4.setContent(html_87b032e4aa646692041162eb439b9a00);
+            
+        
+
+        marker_bb916c88d7ab449c84d25469230b0eef.bindPopup(popup_10fcae3d39d8027703919801f8942fc4)
+        ;
+
+        
+    
+    
+                marker_bb916c88d7ab449c84d25469230b0eef.setIcon(icon_062fd364bec165ae3d8a51ee5bdca200);
+            
+    
+            var marker_7f224b6a2af16391d581a7cbff9d39ee = L.marker(
+                [19.04721101185288, 72.86037051579468],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_2f09457a33a8d80ba7fcc5f5ab9ecbe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0cb6674800c7f134eaa7d1a18f6724c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_749cff1dd446619093040b54ab8bf09c = $(`<div id="html_749cff1dd446619093040b54ab8bf09c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Saheel Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">58/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Saheel Restaurant, 90 Feet Road, Laxmi Baug, Dharavi, Mumbai Zone 2, Mumbai, Mumbai City District, M...</i>         </div>         </div>`)[0];
+                popup_e0cb6674800c7f134eaa7d1a18f6724c.setContent(html_749cff1dd446619093040b54ab8bf09c);
+            
+        
+
+        marker_7f224b6a2af16391d581a7cbff9d39ee.bindPopup(popup_e0cb6674800c7f134eaa7d1a18f6724c)
+        ;
+
+        
+    
+    
+                marker_7f224b6a2af16391d581a7cbff9d39ee.setIcon(icon_2f09457a33a8d80ba7fcc5f5ab9ecbe5);
+            
+    
+            var marker_df238b3b8a4e164a9a9c804caef22016 = L.marker(
+                [19.065392771763737, 72.86156698997239],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_78f0eae733f7f0d4115617eb0c2c47d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aa8f113fd5b90b1545d837689b67825 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c393d0db6c70719434758b9a3e92fdde = $(`<div id="html_c393d0db6c70719434758b9a3e92fdde" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Kailash Sarovar</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">55/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Kailash Sarovar, Bharat Nagar Road, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, ...</i>         </div>         </div>`)[0];
+                popup_9aa8f113fd5b90b1545d837689b67825.setContent(html_c393d0db6c70719434758b9a3e92fdde);
+            
+        
+
+        marker_df238b3b8a4e164a9a9c804caef22016.bindPopup(popup_9aa8f113fd5b90b1545d837689b67825)
+        ;
+
+        
+    
+    
+                marker_df238b3b8a4e164a9a9c804caef22016.setIcon(icon_78f0eae733f7f0d4115617eb0c2c47d8);
+            
+    
+            var marker_97ee1a876356b8b58c004221cc8933e7 = L.marker(
+                [19.065416761488066, 72.86188653814555],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_95a94415290941a3f7d58a2dbb6e201d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e260feeec1a95c32c40ce19c19e53139 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17d9a5da51842a32418aa92a86e6fbf6 = $(`<div id="html_17d9a5da51842a32418aa92a86e6fbf6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Rajwada Thal™</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">60/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Rajwada Thal™, Bharat Nagar Road, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, Mu...</i>         </div>         </div>`)[0];
+                popup_e260feeec1a95c32c40ce19c19e53139.setContent(html_17d9a5da51842a32418aa92a86e6fbf6);
+            
+        
+
+        marker_97ee1a876356b8b58c004221cc8933e7.bindPopup(popup_e260feeec1a95c32c40ce19c19e53139)
+        ;
+
+        
+    
+    
+                marker_97ee1a876356b8b58c004221cc8933e7.setIcon(icon_95a94415290941a3f7d58a2dbb6e201d);
+            
+    
+            var marker_c9eecadf7dadf33e878c390444a56505 = L.marker(
+                [19.043235835038484, 72.86415243128083],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_5349457e5caca055be53eaf9a67026f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3edf839744708a01f7b64b05a22e5fee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_569c453f69bf3cfa888fbd2700ff8f06 = $(`<div id="html_569c453f69bf3cfa888fbd2700ff8f06" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Peninsula Veg</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">55/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Peninsula Veg, Sion Circle, Sion Koliwada, Sion East, F/N Ward, Mumbai Zone 2, Mumbai City District,...</i>         </div>         </div>`)[0];
+                popup_3edf839744708a01f7b64b05a22e5fee.setContent(html_569c453f69bf3cfa888fbd2700ff8f06);
+            
+        
+
+        marker_c9eecadf7dadf33e878c390444a56505.bindPopup(popup_3edf839744708a01f7b64b05a22e5fee)
+        ;
+
+        
+    
+    
+                marker_c9eecadf7dadf33e878c390444a56505.setIcon(icon_5349457e5caca055be53eaf9a67026f1);
+            
+    
+            var marker_ca0d14a630ebea7be84615e192e83933 = L.marker(
+                [19.041929657564253, 72.86411547011113],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_9b4550b1953db896775c21bb70cf0432 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_511c386e2ad7ce604950bbaed22d140e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8d170642f098ae4502709e265782686 = $(`<div id="html_e8d170642f098ae4502709e265782686" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Hanuman Veg Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">45/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Hanuman Veg Restaurant, Road No 8, Sion Koliwada, Sion East, F/N Ward, Mumbai Zone 2, Mumbai City Di...</i>         </div>         </div>`)[0];
+                popup_511c386e2ad7ce604950bbaed22d140e.setContent(html_e8d170642f098ae4502709e265782686);
+            
+        
+
+        marker_ca0d14a630ebea7be84615e192e83933.bindPopup(popup_511c386e2ad7ce604950bbaed22d140e)
+        ;
+
+        
+    
+    
+                marker_ca0d14a630ebea7be84615e192e83933.setIcon(icon_9b4550b1953db896775c21bb70cf0432);
+            
+    
+            var marker_700bfa4dd4788e430d34db2a9a6c753e = L.marker(
+                [19.04314312647786, 72.86139259368385],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_178ceeb605ca3372084e3b2f1317be7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e62939b8b45b2e19be1d5e57a6e45dd7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57a8f1ca2e2bc338918f23f008af688f = $(`<div id="html_57a8f1ca2e2bc338918f23f008af688f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Gurukripa</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">49/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Gurukripa, Road No 24, Agarwada Colony, Sion East, F/N Ward, Mumbai Zone 2, Mumbai City District, Ma...</i>         </div>         </div>`)[0];
+                popup_e62939b8b45b2e19be1d5e57a6e45dd7.setContent(html_57a8f1ca2e2bc338918f23f008af688f);
+            
+        
+
+        marker_700bfa4dd4788e430d34db2a9a6c753e.bindPopup(popup_e62939b8b45b2e19be1d5e57a6e45dd7)
+        ;
+
+        
+    
+    
+                marker_700bfa4dd4788e430d34db2a9a6c753e.setIcon(icon_178ceeb605ca3372084e3b2f1317be7f);
+            
+    
+            var marker_b8b10722818606c10e0cd8c71d3d6280 = L.marker(
+                [19.06923015442718, 72.8697271730667],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_4503620a285b53cd01321f90a84ee8e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ef810a695d10057d5f280c89963b38c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12f1333f6385765fff67536d4ad14089 = $(`<div id="html_12f1333f6385765fff67536d4ad14089" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">PizzaExpress</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">56/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">PizzaExpress, Bandra Kurla Complex Road, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mum...</i>         </div>         </div>`)[0];
+                popup_2ef810a695d10057d5f280c89963b38c.setContent(html_12f1333f6385765fff67536d4ad14089);
+            
+        
+
+        marker_b8b10722818606c10e0cd8c71d3d6280.bindPopup(popup_2ef810a695d10057d5f280c89963b38c)
+        ;
+
+        
+    
+    
+                marker_b8b10722818606c10e0cd8c71d3d6280.setIcon(icon_4503620a285b53cd01321f90a84ee8e8);
+            
+    
+            var marker_ec00031cc4aaf521a34ae10abf09fa82 = L.marker(
+                [19.069750733355487, 72.86984151949508],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_9ead5d9883c9d32e21afb75b29f21871 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fda0c3840d2296f7781590afd213baa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad2de1287552817c330e8717337e6a31 = $(`<div id="html_ad2de1287552817c330e8717337e6a31" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Hitchki</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">67/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Hitchki, Bandra Kurla Complex Road, G Block, Bandra Kurla Complex, H/E Ward, Mumbai Zone 3, Mumbai, ...</i>         </div>         </div>`)[0];
+                popup_5fda0c3840d2296f7781590afd213baa.setContent(html_ad2de1287552817c330e8717337e6a31);
+            
+        
+
+        marker_ec00031cc4aaf521a34ae10abf09fa82.bindPopup(popup_5fda0c3840d2296f7781590afd213baa)
+        ;
+
+        
+    
+    
+                marker_ec00031cc4aaf521a34ae10abf09fa82.setIcon(icon_9ead5d9883c9d32e21afb75b29f21871);
+            
+    
+            var marker_156acb68312831a784ca12e41aee859e = L.marker(
+                [19.06466292498857, 72.88148511611588],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_3a8f22764316130b31846a87d6ccdf99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a879139418bbaca8ece5f1bf69695a79 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9ec31096716e4dbc3773746c318f288 = $(`<div id="html_b9ec31096716e4dbc3773746c318f288" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">cafe nar restarunt</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">44/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">cafe nar restarunt, SG Barve Marg, Naware Baug Jagruti Nagar, Kurla East, L Ward, Mumbai Zone 5, Mum...</i>         </div>         </div>`)[0];
+                popup_a879139418bbaca8ece5f1bf69695a79.setContent(html_b9ec31096716e4dbc3773746c318f288);
+            
+        
+
+        marker_156acb68312831a784ca12e41aee859e.bindPopup(popup_a879139418bbaca8ece5f1bf69695a79)
+        ;
+
+        
+    
+    
+                marker_156acb68312831a784ca12e41aee859e.setIcon(icon_3a8f22764316130b31846a87d6ccdf99);
+            
+    
+            var marker_5369d65811a1ec6ec8cbe4bbfabd3215 = L.marker(
+                [19.063454384317517, 72.88298871748553],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_74babbec416beaa3c53a3ee3f4e45c25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38abc8ea8832f869d33336870fa71adf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0106625649d414b83087e4339ff4e26 = $(`<div id="html_b0106625649d414b83087e4339ff4e26" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">sawali hotel</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">54/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">sawali hotel, SG Barve Marg, Naware Baug Jagruti Nagar, Kurla East, L Ward, Mumbai Zone 5, Mumbai, M...</i>         </div>         </div>`)[0];
+                popup_38abc8ea8832f869d33336870fa71adf.setContent(html_b0106625649d414b83087e4339ff4e26);
+            
+        
+
+        marker_5369d65811a1ec6ec8cbe4bbfabd3215.bindPopup(popup_38abc8ea8832f869d33336870fa71adf)
+        ;
+
+        
+    
+    
+                marker_5369d65811a1ec6ec8cbe4bbfabd3215.setIcon(icon_74babbec416beaa3c53a3ee3f4e45c25);
+            
+    
+            var marker_81d8d1129c477d94aed74bffa33a196f = L.marker(
+                [19.06502245993992, 72.88267477395246],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_b62d8d74e5dcb73501f9d06ee184c820 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23759c478593b8b45191f3592ee3cca0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61035ab7c755ede5136de1eeb46c2f46 = $(`<div id="html_61035ab7c755ede5136de1eeb46c2f46" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Sheetal Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">58/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Sheetal Restaurant, SG Barve Marg, Naware Baug Jagruti Nagar, Kurla East, L Ward, Mumbai Zone 5, Mum...</i>         </div>         </div>`)[0];
+                popup_23759c478593b8b45191f3592ee3cca0.setContent(html_61035ab7c755ede5136de1eeb46c2f46);
+            
+        
+
+        marker_81d8d1129c477d94aed74bffa33a196f.bindPopup(popup_23759c478593b8b45191f3592ee3cca0)
+        ;
+
+        
+    
+    
+                marker_81d8d1129c477d94aed74bffa33a196f.setIcon(icon_b62d8d74e5dcb73501f9d06ee184c820);
+            
+    
+            var marker_970c201355eb48754784c25e647048fa = L.marker(
+                [19.05369735430181, 72.8863590259144],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_acf32faa71222ffcea9edaa7fe234cbb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dee00b3a17d6850cf84096a002e3e6fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eea6f0b625668b243cc6ed88517601af = $(`<div id="html_eea6f0b625668b243cc6ed88517601af" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Saroj</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">52/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Saroj, Sion Panvel Highway, Suman Nagar, Chembur, M/W Ward, Mumbai Zone 5, Mumbai, Mumbai Suburban D...</i>         </div>         </div>`)[0];
+                popup_dee00b3a17d6850cf84096a002e3e6fe.setContent(html_eea6f0b625668b243cc6ed88517601af);
+            
+        
+
+        marker_970c201355eb48754784c25e647048fa.bindPopup(popup_dee00b3a17d6850cf84096a002e3e6fe)
+        ;
+
+        
+    
+    
+                marker_970c201355eb48754784c25e647048fa.setIcon(icon_acf32faa71222ffcea9edaa7fe234cbb);
+            
+    
+            var marker_644088a977f7fdfc6a29182bb2760448 = L.marker(
+                [19.053099300580882, 72.88672060721522],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_9aff7c2106970aaa825b38ed23cd3d13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbf647ad90b5e09d3bb64ad259514708 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2078136b6373df2cc471cb0bcc2c138 = $(`<div id="html_e2078136b6373df2cc471cb0bcc2c138" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Sion Panvel Highway</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">50/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Sion Panvel Highway, Suman Nagar, Chembur, M/W Ward, Mumbai Zone 5, Mumbai, Mumbai Suburban District...</i>         </div>         </div>`)[0];
+                popup_bbf647ad90b5e09d3bb64ad259514708.setContent(html_e2078136b6373df2cc471cb0bcc2c138);
+            
+        
+
+        marker_644088a977f7fdfc6a29182bb2760448.bindPopup(popup_bbf647ad90b5e09d3bb64ad259514708)
+        ;
+
+        
+    
+    
+                marker_644088a977f7fdfc6a29182bb2760448.setIcon(icon_9aff7c2106970aaa825b38ed23cd3d13);
+            
+    
+            var marker_42bccc41b6763b034a509f5824b7e974 = L.marker(
+                [19.072044586983584, 72.8700318976453],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_6b816ae0f3286f357093f45aa14787a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4b7161eb9d15a86895cafbda7aedc30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f36006ad5452dd20e8502d0e03c4255b = $(`<div id="html_f36006ad5452dd20e8502d0e03c4255b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Burn Bar and Kitchen</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">58/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Burn Bar and Kitchen, Pinnacle Corporate Park, Kanzul Iman Road, Kalina Village, Bandra Kurla Comple...</i>         </div>         </div>`)[0];
+                popup_b4b7161eb9d15a86895cafbda7aedc30.setContent(html_f36006ad5452dd20e8502d0e03c4255b);
+            
+        
+
+        marker_42bccc41b6763b034a509f5824b7e974.bindPopup(popup_b4b7161eb9d15a86895cafbda7aedc30)
+        ;
+
+        
+    
+    
+                marker_42bccc41b6763b034a509f5824b7e974.setIcon(icon_6b816ae0f3286f357093f45aa14787a2);
+            
+    
+            var marker_efbbae975b06ef85344874cf9ec62510 = L.marker(
+                [19.041666661137405, 72.85816497670335],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_6491aafbe2d0f933a95da697372add36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9be7af6b77c6a1553597c1a007bc060e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48c3632fe3c58fcee88d8de8e25b2b91 = $(`<div id="html_48c3632fe3c58fcee88d8de8e25b2b91" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Mercy Hotel</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">70/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Mercy Hotel, Mahatma Gandhi Road, Joglekar Nagar, G/N Ward, Mumbai Zone 2, Mumbai City District, Mah...</i>         </div>         </div>`)[0];
+                popup_9be7af6b77c6a1553597c1a007bc060e.setContent(html_48c3632fe3c58fcee88d8de8e25b2b91);
+            
+        
+
+        marker_efbbae975b06ef85344874cf9ec62510.bindPopup(popup_9be7af6b77c6a1553597c1a007bc060e)
+        ;
+
+        
+    
+    
+                marker_efbbae975b06ef85344874cf9ec62510.setIcon(icon_6491aafbe2d0f933a95da697372add36);
+            
+    
+            var marker_820e18d73defd2e92a500b1c96442786 = L.marker(
+                [19.060841408367914, 72.85217994728043],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_bd08c6772e22071e0c28c59206724ae5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6dea9ef0702f07bdba679b0c92d65fab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06eb64baf631e489a00d0005bbf1efdd = $(`<div id="html_06eb64baf631e489a00d0005bbf1efdd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Garam Masala</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">63/100</span><br>             <b>Sentiment:</b> Positive<br>             <br>             <i style="font-size: 11px;">Garam Masala, Ramakrishna Paramahansa Marg, Sant Dnyaneshwar Nagar, Bandra East, H/E Ward, Mumbai Zo...</i>         </div>         </div>`)[0];
+                popup_6dea9ef0702f07bdba679b0c92d65fab.setContent(html_06eb64baf631e489a00d0005bbf1efdd);
+            
+        
+
+        marker_820e18d73defd2e92a500b1c96442786.bindPopup(popup_6dea9ef0702f07bdba679b0c92d65fab)
+        ;
+
+        
+    
+    
+                marker_820e18d73defd2e92a500b1c96442786.setIcon(icon_bd08c6772e22071e0c28c59206724ae5);
+            
+    
+            var marker_14fa41fc9bd67c88ce140a91786580da = L.marker(
+                [19.072477951711793, 72.87657394804596],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_4111790f5f1574a08cbade801840ed37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cc6c1d7a8240aba6146ec70848014e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3a6a2688185d33afd9df63509c8380e = $(`<div id="html_e3a6a2688185d33afd9df63509c8380e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Deluxe Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">50/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Deluxe Restaurant, Lal Bahadur Shastri Marg, Kismat Nagar, Kurla West, L Ward, Mumbai Zone 5, Mumbai...</i>         </div>         </div>`)[0];
+                popup_7cc6c1d7a8240aba6146ec70848014e2.setContent(html_e3a6a2688185d33afd9df63509c8380e);
+            
+        
+
+        marker_14fa41fc9bd67c88ce140a91786580da.bindPopup(popup_7cc6c1d7a8240aba6146ec70848014e2)
+        ;
+
+        
+    
+    
+                marker_14fa41fc9bd67c88ce140a91786580da.setIcon(icon_4111790f5f1574a08cbade801840ed37);
+            
+    
+            var marker_a790aed45389e52633c0d333e5be7ba0 = L.marker(
+                [19.074878725449196, 72.87059050115673],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_a6554bc4a1c843e461194b1d560a0377 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93a70f3406654a34c896a5122a17e226 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fcf2fc39f00546d8a814346590e497a = $(`<div id="html_4fcf2fc39f00546d8a814346590e497a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Hotel Ravi Pure Veg</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">50/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Hotel Ravi Pure Veg, Santa Cruz – Chembur Link Road, Kalina Village, Bandra Kurla Complex, H/E Ward,...</i>         </div>         </div>`)[0];
+                popup_93a70f3406654a34c896a5122a17e226.setContent(html_4fcf2fc39f00546d8a814346590e497a);
+            
+        
+
+        marker_a790aed45389e52633c0d333e5be7ba0.bindPopup(popup_93a70f3406654a34c896a5122a17e226)
+        ;
+
+        
+    
+    
+                marker_a790aed45389e52633c0d333e5be7ba0.setIcon(icon_a6554bc4a1c843e461194b1d560a0377);
+            
+    
+            var marker_9a522b975de3791d0c71c4343e165d1a = L.marker(
+                [19.06036363505057, 72.84998845936322],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_e6162ad6e975948ad131563df2253f6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a04b4711865a6c32c1fd5338cd8e82c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e47cefa8dd17a9babcd59a6faa9c4cf = $(`<div id="html_1e47cefa8dd17a9babcd59a6faa9c4cf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Chinar Bar and Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">41/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Chinar Bar and Restaurant, Ambedkar Chowk, Gandhi Nagar, Bandra East, H/E Ward, Mumbai Zone 3, Mumba...</i>         </div>         </div>`)[0];
+                popup_8a04b4711865a6c32c1fd5338cd8e82c.setContent(html_1e47cefa8dd17a9babcd59a6faa9c4cf);
+            
+        
+
+        marker_9a522b975de3791d0c71c4343e165d1a.bindPopup(popup_8a04b4711865a6c32c1fd5338cd8e82c)
+        ;
+
+        
+    
+    
+                marker_9a522b975de3791d0c71c4343e165d1a.setIcon(icon_e6162ad6e975948ad131563df2253f6d);
+            
+    
+            var marker_9721e8d220e963998f8f83e2d50976cf = L.marker(
+                [19.05758200895866, 72.84791831138402],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_2f977c2e4ca9c8f8aca407449305d905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91d2cca6ec10dda6a97786017fac17fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2586d79e4e7640a8d4234b0d3b83f06b = $(`<div id="html_2586d79e4e7640a8d4234b0d3b83f06b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Belvedere</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">54/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Belvedere, Shri Ramnath Parkar Road, Gandhi Nagar, Bandra East, H/E Ward, Mumbai Zone 3, Mumbai, Mum...</i>         </div>         </div>`)[0];
+                popup_91d2cca6ec10dda6a97786017fac17fa.setContent(html_2586d79e4e7640a8d4234b0d3b83f06b);
+            
+        
+
+        marker_9721e8d220e963998f8f83e2d50976cf.bindPopup(popup_91d2cca6ec10dda6a97786017fac17fa)
+        ;
+
+        
+    
+    
+                marker_9721e8d220e963998f8f83e2d50976cf.setIcon(icon_2f977c2e4ca9c8f8aca407449305d905);
+            
+    
+            var marker_b1dcb9c6b57e30c57bc486481d29230e = L.marker(
+                [19.057117531084415, 72.84718561959943],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_ed4e01457fd14dc36442679813f7a3ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f4d48114c40afeee6100f8415ca09ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef63d45e04598832d991396620f4178f = $(`<div id="html_ef63d45e04598832d991396620f4178f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Amey</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">59/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Amey, Road No 2, Gandhi Nagar, Bandra East, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Suburban Distric...</i>         </div>         </div>`)[0];
+                popup_0f4d48114c40afeee6100f8415ca09ba.setContent(html_ef63d45e04598832d991396620f4178f);
+            
+        
+
+        marker_b1dcb9c6b57e30c57bc486481d29230e.bindPopup(popup_0f4d48114c40afeee6100f8415ca09ba)
+        ;
+
+        
+    
+    
+                marker_b1dcb9c6b57e30c57bc486481d29230e.setIcon(icon_ed4e01457fd14dc36442679813f7a3ff);
+            
+    
+            var marker_0cd2aadfb2bf2fd99b3d81593831b056 = L.marker(
+                [19.06347070036088, 72.84883387213785],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_e7697c8c2f2565c61afae8cb83365801 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94c3183850be982931ac065609339018 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_001f95948ac661e5ef25bc9f665c596b = $(`<div id="html_001f95948ac661e5ef25bc9f665c596b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Celebration 365</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">42/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Celebration 365, JL Shirshekar Marg, Gandhi Nagar, Bandra East, H/E Ward, Mumbai Zone 3, Mumbai, Mum...</i>         </div>         </div>`)[0];
+                popup_94c3183850be982931ac065609339018.setContent(html_001f95948ac661e5ef25bc9f665c596b);
+            
+        
+
+        marker_0cd2aadfb2bf2fd99b3d81593831b056.bindPopup(popup_94c3183850be982931ac065609339018)
+        ;
+
+        
+    
+    
+                marker_0cd2aadfb2bf2fd99b3d81593831b056.setIcon(icon_e7697c8c2f2565c61afae8cb83365801);
+            
+    
+            var marker_de8ba8710574b69952b52f02031474d2 = L.marker(
+                [19.077352001272406, 72.86596188299895],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_4da2b674aef96341e883bf417efe176d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9628297b60930e35a54e2c4eac86e96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54af014707dcb80755519bb412087e37 = $(`<div id="html_54af014707dcb80755519bb412087e37" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Shawarma's & More</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">56/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Shawarma's & More, Jawaharlal Nehru Road, Kolivery Village, Kalina, H/E Ward, Mumbai Zone 3, Mumbai,...</i>         </div>         </div>`)[0];
+                popup_c9628297b60930e35a54e2c4eac86e96.setContent(html_54af014707dcb80755519bb412087e37);
+            
+        
+
+        marker_de8ba8710574b69952b52f02031474d2.bindPopup(popup_c9628297b60930e35a54e2c4eac86e96)
+        ;
+
+        
+    
+    
+                marker_de8ba8710574b69952b52f02031474d2.setIcon(icon_4da2b674aef96341e883bf417efe176d);
+            
+    
+            var marker_d4cd529295744b7481fd53dbd6a3538a = L.marker(
+                [19.06103145639482, 72.8480836416447],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_b55fdf4daa24dac2629acb6ad4c9055d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d36eec36c635a67fe865650b0ab9c79e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16f0ced1e4cbdbcb82ab468624b1e717 = $(`<div id="html_16f0ced1e4cbdbcb82ab468624b1e717" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Sai Prasad</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">57/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Sai Prasad, Road No 2, Gandhi Nagar, Bandra East, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Suburban D...</i>         </div>         </div>`)[0];
+                popup_d36eec36c635a67fe865650b0ab9c79e.setContent(html_16f0ced1e4cbdbcb82ab468624b1e717);
+            
+        
+
+        marker_d4cd529295744b7481fd53dbd6a3538a.bindPopup(popup_d36eec36c635a67fe865650b0ab9c79e)
+        ;
+
+        
+    
+    
+                marker_d4cd529295744b7481fd53dbd6a3538a.setIcon(icon_b55fdf4daa24dac2629acb6ad4c9055d);
+            
+    
+            var marker_28b02eaf28a85d2deee3e23ad92c9ffa = L.marker(
+                [19.05694452645029, 72.84702654733735],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_731269938021d9a0d56d903379a66eb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83b03a98436eb3800cf93a4eabf03abe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36d7d742085dfe97befe8eb26172754b = $(`<div id="html_36d7d742085dfe97befe8eb26172754b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Highway Gomantak</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">59/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Highway Gomantak, Service Road, Gandhi Nagar, Kherwadi, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Subu...</i>         </div>         </div>`)[0];
+                popup_83b03a98436eb3800cf93a4eabf03abe.setContent(html_36d7d742085dfe97befe8eb26172754b);
+            
+        
+
+        marker_28b02eaf28a85d2deee3e23ad92c9ffa.bindPopup(popup_83b03a98436eb3800cf93a4eabf03abe)
+        ;
+
+        
+    
+    
+                marker_28b02eaf28a85d2deee3e23ad92c9ffa.setIcon(icon_731269938021d9a0d56d903379a66eb3);
+            
+    
+            var marker_d6a5eff52121c5523b53164e0e8396c3 = L.marker(
+                [19.0631806101102, 72.84807227615629],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_4acc916faf367fb62cc550e567381845 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3f0c3dd7f832efe2e33b7e765cafbb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c62277d0b3aea34cf7026f24151fd19 = $(`<div id="html_6c62277d0b3aea34cf7026f24151fd19" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Krishna Restaurant</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">50/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Krishna Restaurant, Service Road, Gandhi Nagar, Kherwadi, H/E Ward, Mumbai Zone 3, Mumbai, Mumbai Su...</i>         </div>         </div>`)[0];
+                popup_e3f0c3dd7f832efe2e33b7e765cafbb3.setContent(html_6c62277d0b3aea34cf7026f24151fd19);
+            
+        
+
+        marker_d6a5eff52121c5523b53164e0e8396c3.bindPopup(popup_e3f0c3dd7f832efe2e33b7e765cafbb3)
+        ;
+
+        
+    
+    
+                marker_d6a5eff52121c5523b53164e0e8396c3.setIcon(icon_4acc916faf367fb62cc550e567381845);
+            
+    
+            var marker_9009096c1f345741d92bbf2c706698b1 = L.marker(
+                [19.045599571129, 72.84824260577537],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_f0e84bc5b0cee0c0f348d722a767f29c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16c7db0be740cfead3a291a51463c2d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_902aae88d20825ff45e711f3163dfacb = $(`<div id="html_902aae88d20825ff45e711f3163dfacb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Abhinandan Family Restaurant and bar</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">57/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Abhinandan Family Restaurant and bar, Mahim Sion Link Road, Navjivan Society, Mahim, G/N Ward, Mumba...</i>         </div>         </div>`)[0];
+                popup_16c7db0be740cfead3a291a51463c2d0.setContent(html_902aae88d20825ff45e711f3163dfacb);
+            
+        
+
+        marker_9009096c1f345741d92bbf2c706698b1.bindPopup(popup_16c7db0be740cfead3a291a51463c2d0)
+        ;
+
+        
+    
+    
+                marker_9009096c1f345741d92bbf2c706698b1.setIcon(icon_f0e84bc5b0cee0c0f348d722a767f29c);
+            
+    
+            var marker_14ca9ee790192984f0afa22b0ca764f6 = L.marker(
+                [19.0454541841513, 72.84782984921695],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_00e2812aa894a6d5fdfbe2870450025c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c50f20490967cc57be76b5112c1e9c75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d38571eb563785337713b7a7a16af73e = $(`<div id="html_d38571eb563785337713b7a7a16af73e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Nogauri Ama Milk center</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">54/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Nogauri Ama Milk center, Mahim Sion Link Road, Navjivan Society, Mahim, G/N Ward, Mumbai Zone 2, Mum...</i>         </div>         </div>`)[0];
+                popup_c50f20490967cc57be76b5112c1e9c75.setContent(html_d38571eb563785337713b7a7a16af73e);
+            
+        
+
+        marker_14ca9ee790192984f0afa22b0ca764f6.bindPopup(popup_c50f20490967cc57be76b5112c1e9c75)
+        ;
+
+        
+    
+    
+                marker_14ca9ee790192984f0afa22b0ca764f6.setIcon(icon_00e2812aa894a6d5fdfbe2870450025c);
+            
+    
+            var marker_157b1637169c5fe70e5369e462cd58c2 = L.marker(
+                [19.045026406765224, 72.84808023443127],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_3c3c6fc8bdb66be1bb6a2156e3aed622 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1e3f0a961f4b6a1bfe4d89606e3e953 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14b2dec25449b5e8889a4a67ba9bc0f3 = $(`<div id="html_14b2dec25449b5e8889a4a67ba9bc0f3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Datar Darbar</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">47/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Datar Darbar, 60 Feet Road, Sheshwadi, Mahim, G/N Ward, Mumbai Zone 2, Mumbai City District, Maharas...</i>         </div>         </div>`)[0];
+                popup_a1e3f0a961f4b6a1bfe4d89606e3e953.setContent(html_14b2dec25449b5e8889a4a67ba9bc0f3);
+            
+        
+
+        marker_157b1637169c5fe70e5369e462cd58c2.bindPopup(popup_a1e3f0a961f4b6a1bfe4d89606e3e953)
+        ;
+
+        
+    
+    
+                marker_157b1637169c5fe70e5369e462cd58c2.setIcon(icon_3c3c6fc8bdb66be1bb6a2156e3aed622);
+            
+    
+            var marker_e45fe4efe0ed28294afd6dd5589977a7 = L.marker(
+                [19.076586646306218, 72.87784186464512],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_4cd58adc9482ff9f8499e6a7a6082d8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a58ca5666f407f81b4090748c87038a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4fcd5acd8c5fb3a9ee4a2c37df8d837a = $(`<div id="html_4fcd5acd8c5fb3a9ee4a2c37df8d837a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Karizma Dhaba</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">54/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Karizma Dhaba, Lal Bahadur Shastri Marg, Hallow Pul, Kurla West, L Ward, Mumbai Zone 5, Mumbai, Mumb...</i>         </div>         </div>`)[0];
+                popup_a58ca5666f407f81b4090748c87038a2.setContent(html_4fcd5acd8c5fb3a9ee4a2c37df8d837a);
+            
+        
+
+        marker_e45fe4efe0ed28294afd6dd5589977a7.bindPopup(popup_a58ca5666f407f81b4090748c87038a2)
+        ;
+
+        
+    
+    
+                marker_e45fe4efe0ed28294afd6dd5589977a7.setIcon(icon_4cd58adc9482ff9f8499e6a7a6082d8f);
+            
+    
+            var marker_1937da3a90a39da348177c32acfab319 = L.marker(
+                [19.04561955857226, 72.84703506035359],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_dce255f3ea060ec26d874f2e51a0b7cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8249a47c4d74abf3ac4162077e3ca65a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_166e570c6ec7ae2c154d8e669cf7d4df = $(`<div id="html_166e570c6ec7ae2c154d8e669cf7d4df" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Shalimar</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">59/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Shalimar, Mahim Sion Link Road, Navjivan Society, Mahim, G/N Ward, Mumbai Zone 2, Mumbai City Distri...</i>         </div>         </div>`)[0];
+                popup_8249a47c4d74abf3ac4162077e3ca65a.setContent(html_166e570c6ec7ae2c154d8e669cf7d4df);
+            
+        
+
+        marker_1937da3a90a39da348177c32acfab319.bindPopup(popup_8249a47c4d74abf3ac4162077e3ca65a)
+        ;
+
+        
+    
+    
+                marker_1937da3a90a39da348177c32acfab319.setIcon(icon_dce255f3ea060ec26d874f2e51a0b7cf);
+            
+    
+            var marker_2d6e3df35e4dc9dd218166408ff3e5c9 = L.marker(
+                [19.054083685165796, 72.89307831226488],
+                {
+}
+            ).addTo(map_622ffabe1df7d91f1e5376eda002efb1);
+        
+    
+            var icon_8869e6abbe5932149f23e093b0261e04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_002eeea5efcc657d82b065d46b4ce751 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8faa2ddc8d074e07cd1db110f601c101 = $(`<div id="html_8faa2ddc8d074e07cd1db110f601c101" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 250px;">             <h4 style="margin-bottom: 5px; color: #333;">Domino's</h4>             <span style="color: #666; font-size: 12px;">Indian Restaurant</span><br>             <hr style="margin: 5px 0;">             <b>Popularity Score:</b> <span style="font-size: 14px; text-shadow: 0 0 1px;">50/100</span><br>             <b>Sentiment:</b> Neutral<br>             <br>             <i style="font-size: 11px;">Domino's, Sion Panvel Highway, Ganesh Nagar, Chembur, M/W Ward, Mumbai Zone 5, Mumbai, Mumbai Suburb...</i>         </div>         </div>`)[0];
+                popup_002eeea5efcc657d82b065d46b4ce751.setContent(html_8faa2ddc8d074e07cd1db110f601c101);
+            
+        
+
+        marker_2d6e3df35e4dc9dd218166408ff3e5c9.bindPopup(popup_002eeea5efcc657d82b065d46b4ce751)
+        ;
+
+        
+    
+    
+                marker_2d6e3df35e4dc9dd218166408ff3e5c9.setIcon(icon_8869e6abbe5932149f23e093b0261e04);
+            
+</script>
+</html>
